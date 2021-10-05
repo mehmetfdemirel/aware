@@ -1,0 +1,21 @@
+name: AWARE_ENV
+channels:
+  - rdkit
+  - anaconda
+  - conda-forge
+  - https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda
+  - defaults
+dependencies:
+  - numpy=1.19.1
+  - pandas=1.0.1
+  - pillow=7.2.0
+  - pip=20.0.2
+  - python=3.7.6
+  - pytorch=1.7
+  - rdkit=2020.03.3.0
+  - scikit-learn=0.23.2
+  - scipy=1.4.1
+  - setuptools=45.2.0
+  - tqdm=4.50.0
+  - nltk=3.6.2
+  - xgboost=0.90
