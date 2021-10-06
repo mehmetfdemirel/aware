@@ -17,7 +17,7 @@ cd env
 bash create_env.sh
 ```
 
-#### 2. Download datasets and prepare them for experiments
+#### 2. Download datasets and process them for experiments
 ```
 cd datasets
 bash download_data.sh
