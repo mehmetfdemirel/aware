@@ -16,10 +16,10 @@ folder="OUTPUT"
 running_index_list=(0 1 2 3 4)
 
 for task in "${task_list[@]}"; do
-  for running_index in "${running_index_list[@]}"; do
+  for index in "${index_list[@]}"; do
           mkdir -p "$folder"/"$task"
           python train.py \
             --task="$task" \
-            --running_index="$running_index" > "$folder"/"$task"/"$running_index".out
+            --index="$index" > "$folder"/"$task"/"$index".out
   done
 done
