@@ -12,14 +12,14 @@ E2-CAM f1-CAM f2-CAM mu alpha homo lumo gap r2
 zpve cv u0 u298 h298 g298
 IMDB-BINARY IMDB-MULTI REDDIT-BINARY COLLAB Mutagenicity)
 
-folder="OUTPUT"
-running_index_list=(0 1 2 3 4)
+output="OUTPUT"
+index_list=(0 1 2 3 4)
 
 for task in "${task_list[@]}"; do
   for index in "${index_list[@]}"; do
-          mkdir -p "$folder"/"$task"
+          mkdir -p "$output"/"$task"
           python train.py \
             --task="$task" \
-            --index="$index" > "$folder"/"$task"/"$index".out
+            --index="$index" > "$output"/"$task"/"$index".out
   done
 done
