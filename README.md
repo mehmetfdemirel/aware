@@ -9,7 +9,7 @@ schemes in a principled way to obtain an end-to-end supervised learning method f
 
 ---
 
-### Instruction to run the code
+### Instructions to run the code
 
 #### 1. Create and activate Anaconda environment
 ```
