@@ -20,7 +20,6 @@ for task in "${task_list[@]}"; do
           mkdir -p "$folder"/"$task"
           python train.py \
             --task="$task" \
-            --hyper=optimal_hypers/"$task" \
             --running_index="$running_index" > "$folder"/"$task"/"$running_index".out
   done
 done
