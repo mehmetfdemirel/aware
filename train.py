@@ -159,7 +159,7 @@ if __name__ == '__main__':
     parser.add_argument('--task', type=str, default='delaney')
     parser.add_argument('--epochs', type=int, default=500)
     parser.add_argument('--hyper', type=str, default='')
-    parser.add_argument('--running_index', type=int, default=0)
+    parser.add_argument('--index', type=int, default=0)
     parser.add_argument('--every_epoch', type=int, default=1)
     args = parser.parse_args()
     print('-' * 30)
