@@ -158,7 +158,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--task', type=str, default='delaney')
     parser.add_argument('--epochs', type=int, default=500)
-    parser.add_argument('--hyper', type=str, default='')
     parser.add_argument('--index', type=int, default=0)
     parser.add_argument('--every_epoch', type=int, default=1)
     args = parser.parse_args()
@@ -167,13 +166,13 @@ if __name__ == '__main__':
 
     ### Reprodubility measures ###
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    random.seed(args.running_index)
-    os.environ['PYTHONHASHargs.seed'] = str(args.running_index)
-    np.random.seed(args.running_index)
-    torch.manual_seed(args.running_index)
+    random.seed(args.index)
+    os.environ['PYTHONHASHargs.seed'] = str(args.index)
+    np.random.seed(args.index)
+    torch.manual_seed(args.index)
     if torch.cuda.is_available():
-        torch.cuda.manual_seed(args.running_index)
-        torch.cuda.manual_seed_all(args.running_index)
+        torch.cuda.manual_seed(args.index)
+        torch.cuda.manual_seed_all(args.index)
     torch.backends.cudnn.deterministic = True
     gpu = False
     if device == torch.device('cuda'):
@@ -217,7 +216,7 @@ if __name__ == '__main__':
 
     ### Dataloader ###
     print('LOADING DATA...')
-    train_dataloader, valid_dataloader, test_dataloader = create_dataloaders(dataset, args.task, args.running_index,
+    train_dataloader, valid_dataloader, test_dataloader = create_dataloaders(dataset, args.task, args.index,
                                                                              128)
     print('DATA LOADING DONE!')
     print()
