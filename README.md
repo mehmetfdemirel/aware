@@ -1,4 +1,4 @@
-# [An Analysis of Attentive Walk-Aggregating Graph Neural Networks](https://arxiv.org/abs/2110.02667)  
+## [An Analysis of Attentive Walk-Aggregating Graph Neural Networks](https://arxiv.org/abs/2110.02667)  
 ### Authors: [Mehmet F. Demirel](cs.wisc.edu/~demirel/), [Shengchao Liu](https://chao1224.github.io/), [Siddhant Garg](https://sid7954.github.io/), [Yingyu Liang](cs.wisc.edu/~yliang/)
 --- ---
 
