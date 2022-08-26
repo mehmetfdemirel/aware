@@ -1,5 +1,5 @@
 ## Attentive Walk-Aggregating Graph Neural Networks - [[TMLR]](https://openreview.net/forum?id=TWSTyYd2Rl), [[arXiv]](https://arxiv.org/abs/2110.02667)
-### Authors: [Mehmet F. Demirel](cs.wisc.edu/~demirel/), [Shengchao Liu](https://chao1224.github.io/), [Siddhant Garg](https://sid7954.github.io/), [Zhenmei Shi](cs.wisc.edu/~zhmeishi/), [Yingyu Liang](cs.wisc.edu/~yliang/)
+### Authors: [Mehmet F. Demirel](https://cs.wisc.edu/~demirel/), [Shengchao Liu](https://chao1224.github.io/), [Siddhant Garg](https://sid7954.github.io/), [Zhenmei Shi](https://cs.wisc.edu/~zhmeishi/), [Yingyu Liang](https://cs.wisc.edu/~yliang/)
 
 ```
 @article{
